@@ -1,63 +1,34 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <a href="https://www.softskills.com.br">Soft Skills</a>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>programação web</title>
+    <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <h1 class="title">Formatação, Apresentação e Lógica em WEB</h1>
-        <p>A programaçãode páginas web tem como objetivo a criação de conteúdos estruturados que permitam o acesso e vizualização para users na internet.</p>
-        <p>Frequentemente, três tecnologias são unidas para isso: HTML, CSS e JavaScript.</p>
-        <div class="list-container">
-            <ol class="list">
-                <li class="html"><a class="html" href="https://pt.wikipedia.org/wiki/HTML">HTML: Formatação e estrutura</a></li>
-                <li class="css"><a class="css" href="https://pt.wikipedia.org/wiki/CSS">CSS: Apresentação e estilo</a></li>
-                <li class="javascript"><a class="javascript" href="https://pt.wikipedia.org/wiki/JavaScript">JavaScript: Lógica e interatividade</a></li>
-            </ol>
+
+    <!-- Adicionada a classe calculadora-box para controlar o Box Model geral -->
+    <div class="calculadora-box">
+        <h1>Calculadora de soma</h1>
+
+        <div class="campo-grupo">
+            <label for="numero1">Primeiro número:</label>
+            <input type="number" id="numero1">
         </div>
+
+        <div class="campo-grupo">
+            <label for="numero2">Segundo número:</label>
+            <input type="number" id="numero2">
+        </div>
+
+        <button id="calcular">Calcular soma</button>
+
+        <p id="resultado">Resultado: aguardando cálculo.</p>
+
+        <script src="script.js"></script>
     </div>
-    <div>
-        <h2 class="title">Formatação: HTML</h2>
-        <p>O HTML (HyperText Markup Language ou Linguagem de Marcação de Hipertexto) é a linguagem de marcação padrão usada para criar e estruturar páginas e aplicativos na web</p>
-        <h3 class="title">O que o HTML faz?</h3>
-        <ul class="list">
-            <li>Define o esqueleto: Organiza os elementos da página</li>
-            <li>Não é linguagem de programação: Não possui lógica de programação</li>
-            <li>Usa tags: Utiliza tags, que são marcações da forma de um conteúdo</li>
-        </ul>
-    </div>
-    <div>
-        <h2 class="title">Apresentação: CSS</h2>
-        <p>O CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata) é uma linguagem de estilo usada para descrever a apresentação de um documento escrito em HTML ou XML.</p>
-        <h3 class="title">O que o CSS faz?</h3>
-        <ul class="list">
-            <li>Define o estilo: Controla a aparência visual da página</li>
-            <li>Não é linguagem de programação: Não possui lógica de programação</li>
-            <li>Usa seletores e propriedades: Aplica estilos aos elementos HTML</li>
-        </ul>
-    </div>
-    <div>
-        <h2 class="title">Lógica: JavaScript</h2>
-        <p>O JavaScript é uma linguagem de programação que permite adicionar interatividade e funcionalidades dinâmicas a páginas web.</p>
-        <h3 class="title">O que o JavaScript faz?</h3>
-        <ul class="list">
-            <li>Adiciona interatividade: Permite que os usuários interajam com a página</li>
-            <li>Manipula o DOM: Pode alterar o conteúdo e a estrutura da página</li>
-            <li>Realiza operações lógicas: Pode executar códigos condicionais e de loop</li>
-        </ul>
-    </div>
-    <div class="card">
-        <h2 class="title">Conclusão</h2>
-        <p>Em resumo, o HTML fornece a estrutura, o CSS define a aparência e o JavaScript adiciona interatividade às páginas web. Juntas, essas tecnologias permitem criar experiências web ricas e envolventes para os usuários.</p>
-        <h2 class="title">Agora acesse uma aplicação web</h2>
-        <ul class="list">
-            <li>você pode clicar f12 para abrir as ferramentas de desenvolvimento </li>
-            <li>também pode inspecionar elementos do site: <a class="html" href="calculadora/">Calculadora</a></li>
-        </ul>
-    </div>
+    
 </body>
 </html>
